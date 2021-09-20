@@ -26,7 +26,7 @@ def collseq(x):
     collx=list()
     while(x!=1):
         collx.append(x)
-        collatz(x)
+        x=collatz(x)
     collx.append(1)
     print("Collatz Sequence of ",x)
     for j in range (0,len(collx)):
